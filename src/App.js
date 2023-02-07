@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./redux-observable.svg";
+import "./App.css";
+import { Beers } from "./components";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img
+          style={{ height: 150, width: 150, margin: 4 }}
+          src={logo}
+          className="App-logo"
+          alt="logo"
+        />
+
+        <Beers />
       </header>
     </div>
   );
